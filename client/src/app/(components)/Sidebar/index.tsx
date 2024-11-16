@@ -47,7 +47,7 @@ const SideBar = () => {
   return (
     <div className={sidebarClassNames}>
         {/* Top logo */}
-        <div className= {`flex gap-3 justify-between md:justify-normal items-center pt-8 ${isSidebarCollapsed ? "px-5" : "pt-8"}`}>
+        <div className= {`flex gap-3 justify-between md:justify-normal items-center pt-8 ${isSidebarCollapsed ? "px-5" : "pt-8 px-2"}`}>
             <Image src="https://s3-inventorymanagement-priksh.s3.us-east-1.amazonaws.com/logo.png" alt='logo' height={27} width={27} className='rounded w-8'/>
             <h1 className={`${isSidebarCollapsed ? "hidden": "block"} font-extrabold text-2xl`}>SHELFCOUNT</h1>
             <button className='md:hidden px-3 py-3 bg-gray-100 rounded-full hover:bg-blue-100' onClick={toggleSidebar}>

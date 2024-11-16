@@ -1,6 +1,6 @@
 "use client"
 import { useAppDispatch, useAppSelector } from '@/app/redux'
-import state, { setIsDarkMode, setIsSidebarCollapsed } from '@/state'
+import { setIsDarkMode, setIsSidebarCollapsed } from '@/state'
 import { Bell, Menu, Moon, Settings, Sun } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'

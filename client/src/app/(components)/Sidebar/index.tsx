@@ -1,6 +1,6 @@
 "use client"
 import { useAppDispatch, useAppSelector } from '@/app/redux'
-import state, { setIsSidebarCollapsed } from '@/state'
+import { setIsSidebarCollapsed } from '@/state'
 import { Archive, CircleDollarSign, Clipboard, Layout, LucideIcon, Menu, SlidersHorizontal, User } from 'lucide-react'
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';

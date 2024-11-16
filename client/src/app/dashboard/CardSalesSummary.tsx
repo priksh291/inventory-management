@@ -3,9 +3,7 @@ import { TrendingUp } from 'lucide-react';
 import React, { useState } from 'react'
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
-type Props = {}
-
-const CardSalesSummary = (props: Props) => {
+const CardSalesSummary = () => {
     const { data, isLoading, isError } = useGetDashboardMetricsQuery();
 
     const saleData = data?.saleSummary || [];

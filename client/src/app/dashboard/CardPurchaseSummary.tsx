@@ -2,7 +2,7 @@ import { useGetDashboardMetricsQuery } from '@/state/api';
 import { TrendingDown, TrendingUp } from 'lucide-react';
 import numeral from 'numeral';
 import React from 'react'
-import { AreaChart, ResponsiveContainer, XAxis, YAxis, Tooltip, Area, Label } from 'recharts';
+import { AreaChart, ResponsiveContainer, XAxis, YAxis, Tooltip, Area } from 'recharts';
 
 
 const CardPurchaseSummary = () => {

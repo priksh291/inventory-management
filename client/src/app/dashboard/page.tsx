@@ -1,5 +1,4 @@
 "use client"
-import { Card } from '@mui/material'
 import React from 'react'
 import CardPopularProducts from './CardPopularProducts'
 import CardPurchaseSummary from './CardPurchaseSummary'
@@ -8,9 +7,8 @@ import CardExpenseSummary from './CardExpenseSummary'
 import StatCard from './StatCard'
 import { CheckCircle, Package, Tag, TrendingDown, TrendingUp } from 'lucide-react'
 
-type Props = {}
 
-const Dashboard = (props: Props) => {
+const Dashboard = () => {
   return (
     <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 xl:overflow-auto gap-10 pb-4 custom-grid-rows'>
       <CardPopularProducts/>

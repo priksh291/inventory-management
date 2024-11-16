@@ -2,6 +2,7 @@
 import { useAppDispatch, useAppSelector } from '@/app/redux'
 import { setIsSidebarCollapsed } from '@/state'
 import { Archive, CircleDollarSign, Clipboard, Layout, LucideIcon, Menu, SlidersHorizontal, User } from 'lucide-react'
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React from 'react';
@@ -47,8 +48,8 @@ const SideBar = () => {
     <div className={sidebarClassNames}>
         {/* Top logo */}
         <div className= {`flex gap-3 justify-between md:justify-normal items-center pt-8 ${isSidebarCollapsed ? "px-5" : "pt-8"}`}>
-            <div>Logo</div>
-            <h1 className={`${isSidebarCollapsed ? "hidden": "block"} font-extrabold text-2xl`}>EDSTOCK</h1>
+            <Image src="https://s3-inventorymanagement-priksh.s3.us-east-1.amazonaws.com/logo.png" alt='logo' height={27} width={27} className='rounded w-8'/>
+            <h1 className={`${isSidebarCollapsed ? "hidden": "block"} font-extrabold text-2xl`}>SHELFCOUNT</h1>
             <button className='md:hidden px-3 py-3 bg-gray-100 rounded-full hover:bg-blue-100' onClick={toggleSidebar}>
                 <Menu className='w-4 h-4'/>
             </button>
@@ -65,7 +66,7 @@ const SideBar = () => {
 
         {/* Footer */}
         <div className={`${isSidebarCollapsed ? "hidden": "block"} mb-10`}>
-            <p className='text-center text-xs text-gray-500'> &copy; 2024 Edstock</p>
+            <p className='text-center text-xs text-gray-500'> &copy; 2024 Shelfcount</p>
         </div>
     </div>  
   )
